@@ -1,0 +1,51 @@
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    background: url('google.jpg') no-repeat center center;
+    background-size: cover; /* Scales the background image to cover the entire area */
+    margin: 0; /* Removes default margin */
+    z-index: -1;
+    opacity: 0.2;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    color: #3aa130;
+    font-style: italic;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+form :nth-child(1){
+    font-family: fantasy;
+    text-align: center;
+    font-size: 40px;
+}
+form :nth-child(1) img{
+    height: 60px;
+    width: 60px;
+}
+form :nth-child(2) ,:nth-child(3){
+    text-align: right;
+    font-size: 20px;
+}
+input[type="file"] {
+    margin-bottom: 10px;
+}
